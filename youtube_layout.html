@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube_layout</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+</head>
+
+<body>
+    <!-- 漢堡選單區 ------------------->    
+    <input type="checkbox" id="toogle" style="display: none;">
+    <div class="sidebar">    
+        <ul>
+            <!-- logo 和按鈕區 -->
+            <li class="hamburger">
+                <div class="btn">
+                    <label for="toogle"><i class="fas fa-bars exit"></i></label>
+                </div>
+                <div class="logo">
+                    <img src="./images/youtube_logo.png" alt="yt_logo" style="height: 32px; width: auto;">
+                </div>
+            </li><hr>
+            <!-- 首頁、探索、訂閱內容 -->
+            <li class="list">
+                <ul>
+                    <li><p>&emsp;<i class="fas fa-home" style="color: rgb(255 0 0);"></i>&emsp;首頁</p></li>               
+                    <li><p>&emsp;<i class="fas fa-compass"></i>&emsp;探索</p></li>
+                    <li><p>&emsp;<i class="fas fa-box-open"></i>&emsp;訂閱內容</p></li>
+                </ul>
+            </li><hr>
+            <!-- 媒體櫃、觀看紀錄 -->
+            <li class="list">
+                <ul>
+                    <li><p>&emsp;<i class="fas fa-play-circle"></i>&emsp;媒體庫</p></li>
+                    <li><p>&emsp;<i class="fas fa-history"></i>&emsp;觀看紀錄</p></li>
+                    <li><p>&emsp;<i class="fas fa-audio-description"></i>&emsp;你的影片</p></li>
+                    <li><p>&emsp;<i class="fas fa-clock"></i>&emsp;稍後觀看</p></li>
+                    <li><p>&emsp;<i class="fas fa-list"></i>&emsp;Korean</p></li>
+                    <li><p>&emsp;<i class="fas fa-chevron-down"></i>&emsp;顯示更多</p></li>
+                </ul>
+            </li><hr>
+            <!-- 訂閱內容 -->
+            <li class="list">
+                <ul style="position: relative;">
+                    <p>&emsp;訂閱內容</p>
+                    <li>&emsp;<a href="https://www.youtube.com/channel/UCmMnzrvnsSnv-0u9M1Rxiqw"><img src="https://yt3.ggpht.com/ytc/AAUvwniSnrTpU6FDgBwrZ2EBSS4lskgf6KUhxdQNVXkN=s88-c-k-c0x00ffffff-no-rj" alt="TODAY 看世界" style="height: 24px; width: auto; border-radius: 50%; position: absolute; top: 49px;">&emsp;&emsp;&emsp;TODAY 看世界</a></li>
+                    <li>&emsp;<a href="https://www.youtube.com/channel/UCiWXd0nmBjlKROwzMyPV-Nw"><img src="https://yt3.ggpht.com/ytc/AAUvwnjTuMUGrd5ilsoavl8lqLHwv5cO_cv-2H1tEcsG=s88-c-k-c0x00ffffff-no-rj" alt="志祺七七 " style="height: 24px; width: auto; border-radius: 50%; position: absolute; top: 90px;">&emsp;;&emsp;&emsp;志祺七七 X 圖文不符</a></li>
+                    <li>&emsp;<a href="https://www.youtube.com/channel/UClEzBxwGGFrbwTVeawscqjQ"><img src="https://yt3.ggpht.com/ytc/AAUvwniCo8j1DlLzkPDvir_E71d8TSl-lIyKRnrBxsn0XQ=s88-c-k-c0x00ffffff-no-rj" alt="許伯簡芝" style="height: 24px; width: auto; border-radius: 50%; position: absolute; top: 133px;">&emsp;;&emsp;&emsp;許伯&簡芝—倉鼠人</a></li>
+                    <li>&emsp;<a href="https://www.youtube.com/channel/UCBShw5O9wwBt9G59xuESZYg"><img src="https://yt3.ggpht.com/ytc/AAUvwniYHJtuXKV1N43LsCNQC7w9irQi3H3_RD4kjggy4w=s88-c-k-c0x00ffffff-no-rj" alt="Theishter Piano" style="height: 24px; width: auto; border-radius: 50%; position: absolute; top: 174px;">&emsp;;&emsp;&emsp;Theishter - Anime on...</a></li>
+                    <li>&emsp;<a href="https://www.youtube.com/channel/UCMDcOT4z7GS1SRGG2g7z43g"><img src="https://yt3.ggpht.com/ytc/AAUvwnjc0yaTFGB60DDTAhKhkWorghrqSgQahCFKl4_htQ=s88-c-k-c0x00ffffff-no-rj" alt="公視新聞實驗室" style="height: 24px; width: auto; border-radius: 50%; position: absolute; top: 215px;">&emsp;;&emsp;&emsp;公視P#新聞實驗室</a></li>
+                    <li>&emsp;<a href="https://www.youtube.com/channel/UCZmyD8-UsaxaVL-Zx3KEQKw"><img src="https://yt3.ggpht.com/ytc/AAUvwnhj9BZK1bRUWMiQ4FO8lyAWD4ichQgEAI8rLbMn=s88-c-k-c0x00ffffff-no-rj" alt="看電影了沒" style="height: 24px; width: auto; border-radius: 50%; position: absolute; top: 257px;">&emsp;;&emsp;&emsp;看电影了没</a></li>
+                    <li>&emsp;<a href="https://www.youtube.com/channel/UCV1OpUwWJCMiv6gJCRR6yAg"><img src="https://yt3.ggpht.com/ytc/AAUvwnjgb0xtMOj6ol8mAzG6NO4_hP4q2cVL1taBSBwf4w=s88-c-k-c0x00ffffff-no-rj" alt="酷的夢" style="height: 24px; width: auto; border-radius: 50%; position: absolute; top: 298px;">&emsp;;&emsp;&emsp;Ku's dream酷的夢-</a></li>
+                    <li>&emsp;<a href="">&emsp;<i class="fas fa-chevron-down"></i>&emsp;顯示另外 84 個項目</a></li>
+                </ul>
+            </li><hr>
+            <!-- 更多功能 -->
+            <li class="list">
+                <ul>
+                    <p>&emsp;更多 YOUTUBE 功能</p>
+                    <li><p>&emsp;<i class="fab fa-youtube"></i>&emsp;Youtube Premium</p></li>
+                    <li><p>&emsp;<i class="fas fa-gamepad"></i>&emsp;遊戲</p></li>
+                    <li><p>&emsp;<i class="fas fa-podcast"></i>&emsp; 直播</p></li>
+                    <li><p>&emsp;<i class="fas fa-trophy"></i>&emsp;體育</p></li>
+                </ul>                
+            </li><hr>
+            <!-- 設定 -->
+            <li class="list">
+                <ul>
+                    <li><p>&emsp;<i class="fas fa-cog"></i>&emsp;設定</p></li>
+                    <li><p>&emsp;<i class="fas fa-flag"></i>&emsp;檢舉記錄</p></li>
+                    <li><p>&emsp;<i class="fas fa-question-circle"></i>&emsp;說明</p></li>
+                    <li><p>&emsp;<i class="fas fa-comment-dots"></i>&emsp;提供意見</p></li>
+                </ul>                
+            </li><hr>
+            <!-- 版權聲明 -->
+            <li class="list">
+                <p class="detail">
+                    <a href="">簡介</a>
+                    <a href="">媒體</a>
+                    <a href="">版權</a>
+                    <a href="">與我們聯絡</a>
+                    <a href="">創作者</a>
+                    <a href="">廣告</a>
+                    <a href="">開發人員</a>
+                </p>
+                <p class="detail">
+                    <a href="">條款</a>
+                    <a href="">隱私權</a>
+                    <a href="">政策與安全性</a>
+                    <a href="">Youtube 運作方式</a>
+                    <a href="">測試新功能</a>
+                </p>
+                <p class="detail">&copy;2021 Google LLC</p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 關掉漢堡選單後的頁面 --------------------------------------------------->
+    <div id="content">
+        <section id="header">
+            <ul>
+                <!-- 左 --------------->
+                <li id="header_left">                                           
+                    <!-- 側欄選單伸縮按鈕 -->
+                    <p class="btn">
+                        <label for="toogle"><i class="fas fa-bars exit"></i></label>
+                    </p>
+                    <!-- logo -->
+                    <p class="logo">
+                        <img src="./images/youtube_logo.png" alt="logo" style="height: 32px; width: auto;">
+                    </p>         
+                </li>
+                <!--中----------------->
+                <li id="header_middle">
+                    <div id="searchBlank">                        
+                        <!-- 搜尋欄 -->
+                        <div class="textBox">
+                            <input type="text" placeholder="搜尋" style="height: 26px; width:500px; border: 0.5px solid rgba(128, 128, 128, 0.425); padding-left: 10px;">
+                            <button><i class='fas fa-search icon' style="color: rgb(129, 129, 129); font-size:13px"></i></button>
+                            <!-- 麥克風 -->
+                            <div  class="micro">                          
+                                <a href=""><i class="fas fa-microphone icon" style="color: rgb(109, 104, 104); font-size: 1.2rem;"></i></a>
+                            </div>  
+                        </div>
+                    </div>
+                </li>
+                <!--右----------------->
+                <li id="header_right">
+                    <div id="iconList">
+                        <div class="right_icon">
+                            <ul>
+                                <!-- 錄影 icon -->
+                                <li class="record">
+                                    <i class="fas fa-video icon"></i>
+                                </li>
+                                <!-- 選單 icon -->
+                                <li class="menu">
+                                    <i class="fas fa-th icon"></i>
+                                </li>
+                                <!-- 鈴鐺 icon -->
+                                <li class="bell">
+                                    <i class="fas fa-bell icon"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 頭貼  -->                        
+                        <a href=""><img src="./images/mary.jpg" alt="profile" style="height: 32px; width: auto; border-radius: 50%;"></a>
+                    </div>
+                </li>            
+            </ul>
+        </section>
+
+        <section id="main">
+            <!-- 左側選單 --------------->
+            <div id="main_left">            
+                <!-- 首頁 icon -->
+                <ul>
+                    <li class="main_icon">
+                        <a href="" alt="首頁"><i class="fas fa-home" style="color: rgb(255 0 0); margin-bottom: 6px;"></i><br><span style="font-size: 14px;">首頁</span></a>
+                    </li>
+                    <!-- 探索 icon -->
+                    <li class="main_icon">
+                        <a href="" alt="探索"><i class="fas fa-compass" style="margin-bottom: 6px;"></i><br><span style="font-size: 14px;">探索</span></a>
+                    </li>
+                    <!-- 訂閱內容 icon -->
+                    <li class="main_icon">
+                        <a href="" alt="訂閱"><i class="fas fa-box-open" style="margin-bottom: 6px;"></i><br><span style="font-size: 14px;">訂閱內容</span></a>
+                    </li>
+                    <!-- 媒體庫 icon -->
+                    <li class="main_icon">
+                        <a href="" alt="媒體庫"><i class="fas fa-play-circle" style="margin-bottom: 6px;"></i><br><span style="font-size: 14px;">媒體庫</span></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 影片區 ----------------->
+            <div id="main_right">
+                <div class="all_box">
+                    <div class="box">
+                        <a href="https://www.youtube.com/watch?v=F-LH1A3bwlA">
+                            <div class="box_bigImg">
+                                <img src="https://i.ytimg.com/vi/F-LH1A3bwlA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDBaRaqClHmzAaYDOb4NZ6jA9MbbQ" alt="">
+                            </div>
+                            <div class="box_describe">
+                                <a href="https://www.youtube.com/channel/UCR1zT1s524Hbc85bdvno_8w">
+                                    <div class="box_smallImg">
+                                        <img src="https://yt3.ggpht.com/ytc/AAUvwnjq2tlDb4Pyp2678yOO69GsQWuUvZE6By7CjgsQOw=s88-c-k-c0x00ffffff-no-rj" alt="">
+                                    </div>
+                                    <div class="box_title">
+                                        <div class="box_main_title">
+                                            <p class="name">Aimer「wonderland」MUSIC VIDEO</p><br>
+                                        </div>
+                                        <p class="sideName">Aimer Official YouTube Channel&nbsp;<img src="./images/melody.png" alt="" style="height:13px; width:auto"></p>
+                                        <p class="sideName">觀看次數：297萬次 • 6天前</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </a>                            
+                    </div>
+                    <div class="box">
+                        <a href="https://www.youtube.com/watch?v=Ajr18Yw5xdY">
+                            <div class="box_bigImg">
+                                <img src="https://i.ytimg.com/vi/Ajr18Yw5xdY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCedgQLtC1_Mn0-QtRRQS-YKH_vSQ" alt="">
+                            </div>
+                            <div class="box_describe">
+                                <a href="https://www.youtube.com/channel/UCzycs8MqvIY4nXWwS-v4J9g">
+                                    <div class="box_smallImg">
+                                        <img src="https://yt3.ggpht.com/ytc/AAUvwnh-wgnxmh2aRq1fsxq9FmKtba7T6q6pB-qFxIkoXA=s88-c-k-c0x00ffffff-no-rj" alt="">
+                                    </div>
+                                    <div class="box_title">
+                                        <div class="box_main_title">
+                                            <p class="name">ONE OK ROCK - Renegades Japanese Version [OFFICIAL MUSIC VIDEO]</p>
+                                        </div><br>
+                                        <p class="sideName">ONE OK ROCK&nbsp;<img src="./images/melody.png" alt="" style="height:13px; width:auto"></p>
+                                        <p class="sideName">觀看次數：270萬次 • 2天前</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </a>                            
+                    </div>
+                    <div class="box">
+                        <a href="https://www.youtube.com/watch?v=bwNzGT-UX7c">
+                            <div class="box_bigImg">
+                                <img src="https://i.ytimg.com/vi/bwNzGT-UX7c/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBfQ_58pF3SQ71tDpdPfyYBfRlpIw" alt="">
+                            </div>
+                            <div class="box_describe">
+                                <a href="https://www.youtube.com/channel/UCk3NOb_PipJJwzMuaBhEfQg">
+                                    <div class="box_smallImg">
+                                        <img src="https://yt3.ggpht.com/ytc/AAUvwniPQyYwJ623jhIQnSlBtmIKpp3MeJY7d6lfQcUbQw=s88-c-k-c0x00ffffff-no-rj" alt="">
+                                    </div>
+                                    <div class="box_title">
+                                        <div class="box_main_title">
+                                            <p class="name">Birdy - Surrender [Official Video]</p><br>
+                                        </div>
+                                        <p class="sideName">Birdy&nbsp;<img src="./images/melody.png" alt="" style="height:13px; width:auto"></p>
+                                        <p class="sideName">觀看次數：161萬次 • 3個月前</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </a>                            
+                    </div>
+                    <div class="box">
+                        <a href="https://www.youtube.com/watch?v=-aMdBA00Ijc">
+                            <div class="box_bigImg">
+                                <img src="https://i.ytimg.com/vi/-aMdBA00Ijc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA9kMg1bK3fpAl5Lt8smYi9jSSJmw" alt="">
+                            </div>
+                            <div class="box_describe">
+                                <a href="https://www.youtube.com/c/BELLAPING">
+                                    <div class="box_smallImg">
+                                        <img src="https://yt3.ggpht.com/ytc/AAUvwnjT5006ntjcDeWIbN4OXrwHDlJlMJAlqkZ7W0gS2Q=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    </div>
+                                    <div class="box_title">
+                                        <div class="box_main_title">
+                                            <p class="name">【HD】周深 - 大魚《大魚海棠》</p><br>
+                                        </div>
+                                        <p class="sideName">BELLA PING MUSIC CHANNEL</p>
+                                        <p class="sideName">觀看次數：2183萬次 • 4年前</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </a>                            
+                    </div>
+                    
+                        <div class="box">
+                            <a href="https://www.youtube.com/watch?v=Iqt8tzH4c6Y">
+                                <div class="box_bigImg">
+                                    <img src="https://i.ytimg.com/vi/Iqt8tzH4c6Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDmoZKhpzssdicrvwZ4pLw9UgLibg" alt="">
+                                </div>
+                                <div class="box_describe">
+                                    <a href="https://www.youtube.com/channel/UCzoqsy8C3lCpsBBVUS3cpTw">
+                                        <div class="box_smallImg">
+                                            <img src="https://yt3.ggpht.com/ytc/AAUvwnij1AZhKEsHkhKBISM0yntjRyNKAPOTp90MdgaE=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                        </div>
+                                        <div class="box_title">
+                                            <div class="box_main_title">
+                                                <p class="name">BELLE (2021) - 70 Second Trailer [HQ]</p><br>
+                                            </div>
+                                            <p class="sideName">スタジオ地図 / STUDIO CHIZUl</p>
+                                            <p class="sideName">觀看次數：142萬次 • 2週前</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </a>                            
+                        </div>
+                        <div class="box">
+                            <a href="https://www.youtube.com/watch?v=VCbsqPP1Eg8">
+                                <div class="box_bigImg">
+                                    <img src="https://i.ytimg.com/vi/VCbsqPP1Eg8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBSZqLlIBrsX9NW5Aa_BlJpDqny3Q" alt="">
+                                </div>
+                                <div class="box_describe">
+                                    <a href="https://www.youtube.com/channel/UCxyzciBLt1Hyw06dlqwAIkw">
+                                        <div class="box_smallImg">
+                                            <img src="https://yt3.ggpht.com/ytc/AAUvwnhvvH2y051ER3Z_TiU-1CKQhoDJXXxhMUVoeMXo=s88-c-k-c0x00ffffff-no-rj" alt="">
+                                        </div>
+                                        <div class="box_title">
+                                            <div class="box_main_title">
+                                                <p class="name">Joe Hisaishi - Labyrinth of Eden</p><br>
+                                            </div>
+                                            <p class="sideName">Joe Hisaishi Official &nbsp;<img src="./images/melody.png" alt="" style="height:13px; width:auto"></p>
+                                            <p class="sideName">觀看次數：7.1萬次 • 2週前</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </a>                            
+                        </div>
+                        <div class="box">
+                            <a href="https://www.youtube.com/watch?v=Ld02grNZZZo">
+                                <div class="box_bigImg">
+                                    <img src="https://i.ytimg.com/vi/Ld02grNZZZo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBpMR_UIIJo9KAJGUbrmA-NGhZCQw" alt="">
+                                </div>
+                                <div class="box_describe">
+                                    <a href="https://www.youtube.com/channel/UCltmf0pqjXyLtNsF2vek_wQ">
+                                        <div class="box_smallImg">
+                                            <img src="https://yt3.ggpht.com/ytc/AAUvwnhsRcGv0u95GilHF8GcHtX21i1rKli6mpOfK8pl=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                        </div>
+                                        <div class="box_title">
+                                            <div class="box_main_title">
+                                                <p class="name">【古琴Guqin】《修禊吟》一琴一咏，畅叙幽情</p><br>
+                                            </div>
+                                            <p class="sideName">自得琴社 Zi De Guqin Studio</p>
+                                            <p class="sideName">觀看次數：3.6萬次 • 2週前</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </a>                            
+                        </div>
+                        <div class="box">
+                            <a href="https://www.youtube.com/watch?v=m6yOdFkXun4">
+                                <div class="box_bigImg">
+                                    <img src="https://i.ytimg.com/vi/m6yOdFkXun4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD9p2LQ_m3XpbZC9-Mztca-Sanz2g" alt="">
+                                </div>
+                                <div class="box_describe">
+                                    <a href="https://www.youtube.com/channel/UCOlupgA2QVdAljxtJCoP6Hg">
+                                        <div class="box_smallImg">
+                                            <img src="https://yt3.ggpht.com/ytc/AAUvwnjYb9r3D3Qo-VYvgDp445_77-w3FOXf4mBAgrDXLg=s88-c-k-c0x00ffffff-no-rj" alt="">
+                                        </div>
+                                        <div class="box_title">
+                                            <div class="box_main_title">
+                                                <p class="name">守夜人 Night Keepers【 我睡不著 I Can't Sleep 】</p><br>
+                                            </div>
+                                            <p class="sideName">Night Keepers&nbsp;<img src="./images/melody.png" alt="" style="height:13px; width:auto"></p>
+                                            <p class="sideName">觀看次數：417萬次 • 1年前</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </a>                            
+                        </div>
+                    
+                    
+                        <div class="box">
+                            <a href="https://www.youtube.com/watch?v=hXoxDPEr-dQ">
+                                <div class="box_bigImg">
+                                    <img src="https://i.ytimg.com/vi/hXoxDPEr-dQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA2So8JNRo-runiHXslh6083cmOIw" alt="">
+                                </div>
+                                <div class="box_describe">
+                                    <a href="https://www.youtube.com/channel/UC9sPNbXInKkYb4_wu9wRcdA">
+                                        <div class="box_smallImg">
+                                            <img src="https://yt3.ggpht.com/ytc/AAUvwngynDwPUNRL7xCU8IbuyJ7qAdp_Bz4okzlz9PbItw=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                        </div>
+                                        <div class="box_title">
+                                            <div class="box_main_title">
+                                                <p class="name">Heaven on Their Minds: Prague Cello Quartet [Official video]</p><br>
+                                            </div>
+                                                <p class="sideName">Prague Cello Quartet</p>
+                                            <p class="sideName">觀看次數：4萬次 • 1個月前</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </a>                            
+                        </div>
+                        <div class="box">
+                            <a href="https://www.youtube.com/watch?v=G1mWfvbcjcI">
+                                <div class="box_bigImg">
+                                    <img src="https://i.ytimg.com/vi/G1mWfvbcjcI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC6A-JgfpFF5Yl6kMUrkYaITwTF4A" alt="">
+                                </div>
+                                <div class="box_describe">
+                                    <a href="https://www.youtube.com/channel/UCffk6c4O1qGsbKtOTWhzq_A">
+                                        <div class="box_smallImg">
+                                            <img src="https://yt3.ggpht.com/ytc/AAUvwng3FxqXlVFPgVuPFc4yqk2RHz1dtHpNQP7LbjXy=s176-c-k-c0x00ffffff-no-rj" alt="">
+                                        </div>
+                                        <div class="box_title">
+                                            <div class="box_main_title">
+                                                <p class="name">Merry go round of life Howl's moving catsle OST for Meow</p><br>
+                                            </div>
+                                            <p class="sideName">Haburu</p>
+                                            <p class="sideName">觀看次數：414萬次 • 11個月前</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </a>                            
+                        </div>
+                        <div class="box">
+                            <a href="https://www.youtube.com/watch?v=HPQin-uuI9o">
+                                <div class="box_bigImg">
+                                    <img src="https://i.ytimg.com/vi/HPQin-uuI9o/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDs3DZL5QqWT5I08X4IhlA52D7YZg" alt="">
+                                </div>
+                                <div class="box_describe">
+                                    <a href="https://www.youtube.com/channel/UCmpf0bVV5fTemOo2WVxjLow">
+                                        <div class="box_smallImg">
+                                            <img src="https://yt3.ggpht.com/ytc/AAUvwnjb4XbQvjcyASaYHKAupX0TsIjmP8gAWQtSUkTY=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                        </div>
+                                        <div class="box_title">
+                                            <div class="box_main_title">
+                                                <p class="name">The Girl from the Other Side official trailer</p><br>
+                                            </div>
+                                            <p class="sideName">Production I.G Official Channel</p>
+                                            <p class="sideName">觀看次數：94萬次 • 1年前</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </a>                            
+                        </div>
+                        <div class="box">
+                            <a href="https://www.youtube.com/watch?v=-hWsvuHlKwg">
+                                <div class="box_bigImg">
+                                    <img src="https://i.ytimg.com/vi/-hWsvuHlKwg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAY3Vcn8gI2YWVpaifL_R_99aCboQ" alt="">
+                                </div>
+                                <div class="box_describe">
+                                    <a href="https://www.youtube.com/channel/UCdEpz2A4DzV__4C1x2quKLw">
+                                        <div class="box_smallImg">
+                                            <img src="https://yt3.ggpht.com/ytc/AKedOLQX0gItqVHu4_WN8BtwWafr7uLWLcWaUngkVdr01A=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                        </div>
+                                        <div class="box_title">
+                                            <div class="box_main_title">
+                                                <p class="name">大師級簡報是如何煉成的？ | PowerPoint 教學 #14</p><br>
+                                            </div>
+                                            <p class="sideName">PAPAYA 電腦教室</p>
+                                            <p class="sideName">觀看次數：96萬次 • 1年前</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </a>                            
+                        </div>
+                    
+                    
+                        <div class="box">
+                            <a href="https://www.youtube.com/watch?v=rzLgFI8-T4M">
+                                <div class="box_bigImg">
+                                    <img src="https://i.ytimg.com/vi/rzLgFI8-T4M/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDIAjZloqoo5jIQN9_XCQnorWxTqA" alt="">
+                                </div>
+                                <div class="box_describe">
+                                    <a href="https://www.youtube.com/c/cheapaoe">
+                                        <div class="box_smallImg">
+                                            <img src="https://yt3.ggpht.com/ytc/AAUvwnihmQ5Oaotj7Sfh4GUo0GnkdAZA7NYKoDPLon6jDQ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                        </div>
+                                        <div class="box_title">
+                                            <div class="box_main_title">
+                                                <p class="name">二戰義大利變成豬隊友的真正原因 ▶ 義大利:不是我的錯</p><br>
+                                            </div>
+                                            <p class="sideName">cheap</p>
+                                            <p class="sideName">觀看次數：9萬次 • 13小時前</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </a>                            
+                        </div>
+                        <div class="box">
+                            <a href="https://www.youtube.com/watch?v=sI2Oe7EkKMI">
+                                <div class="box_bigImg">
+                                    <img src="https://i.ytimg.com/vi/sI2Oe7EkKMI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA4O7HX0o-RF_CQViaPCOO6W8IoBA" alt="">
+                                </div>
+                                <div class="box_describe">
+                                    <a href="https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog">
+                                        <div class="box_smallImg">
+                                            <img src="https://yt3.ggpht.com/ytc/AAUvwngFCKugZwen-81xq0K_0tSU6HQZsvjQ26xsQzO7zg=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                        </div>
+                                        <div class="box_title">
+                                            <div class="box_main_title">
+                                                <p class="name">Floating Action Menu Using Html CSS & Javascript</p><br>
+                                            </div>
+                                            <p class="sideName">Online Tutorials</p>
+                                            <p class="sideName">觀看次數：3899次 • 3小時前</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </a>                            
+                        </div>
+                        <div class="box">
+                            <a href="https://www.youtube.com/watch?v=rDueUyDlEMI">
+                                <div class="box_bigImg">
+                                    <img src="https://i.ytimg.com/vi/rDueUyDlEMI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA_mGPDO0J1NxSUU-Kjexwxpdq2lg" alt="">
+                                </div>
+                                <div class="box_describe">
+                                    <a href="https://www.youtube.com/channel/UCmMnzrvnsSnv-0u9M1Rxiqw">
+                                        <div class="box_smallImg">
+                                            <img src="https://yt3.ggpht.com/ytc/AAUvwniSnrTpU6FDgBwrZ2EBSS4lskgf6KUhxdQNVXkN=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                        </div>
+                                        <div class="box_title">
+                                            <div class="box_main_title">
+                                                <p class="name">全球聚焦王子落難記！約旦宮鬥劇攤在陽光下</p><br>
+                                            </div>
+                                            <p class="sideName">TODAY 看世界</p>
+                                            <p class="sideName">觀看次數：4.3萬次 • 1週前</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </a>                            
+                        </div>
+                        <div class="box">
+                            <a href="https://www.youtube.com/watch?v=OfnBuZJB4kw">
+                                <div class="box_bigImg">
+                                    <img src="https://i.ytimg.com/vi/OfnBuZJB4kw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB1Mv4fE40wZhva5H9afA9SyAlYUg" alt="">
+                                </div>
+                                <div class="box_describe">
+                                    <a href="https://www.youtube.com/channel/UCDNeEBgigHHGtJJOpHSnadA">
+                                        <div class="box_smallImg">
+                                            <img src="https://yt3.ggpht.com/ytc/AAUvwnhdOOblNED7khwBdJ5vjc4YoPF78HKlmZIhpcEM=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                        </div>
+                                        <div class="box_title">
+                                            <div class="box_main_title">
+                                                <p class="name">這是能讓你感受到「徹骨寒意」的遊戲〖遊戲不止〗</p><br>
+                                            </div>
+                                                <p class="sideName">森纳映画</p>
+                                                <p class="sideName">觀看次數：16萬次 • 1天前</p>
+                                            </div>
+                                    </a>
+                                </div>
+                            </a>                            
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
